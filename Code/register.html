@@ -1,0 +1,108 @@
+<html>
+<style>
+body
+{
+background:  white;
+  
+  background-image: url("https://fairwaysatbeylea.com/wp-content/uploads/2015/02/Ordering-Food-Online.jpg"), linear-gradient(white, #4ABDAC);
+
+ background-repeat: no-repeat;
+background-size: 700px 500px;
+background-position:center;
+ padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 30px;
+}
+table
+{
+font-weight:bold;
+font-family:Comic Sans MS;
+font-size:24;
+color: #4ABDAC;
+}
+
+.b{
+background-color:#F7B733;
+
+border-color:#DFDCE3;
+width:200px;
+height: 40px;
+font-weight:bold;
+font-family:Comic Sans MS;
+font-size:24;
+color:white;
+
+}
+.b:hover {
+  background-color: #FC4A1A;
+  color: white;
+}
+.hi{
+height: 30px;
+width: 100 px;
+
+}
+
+
+</style>
+<head>
+  <title>FOS</title>
+</head>
+<body>
+
+
+<h1><font face="Broadway" size="60" color="#FC4A1A">SIGN UP</font></h1>
+<form action="http://localhost:8081/food/Register" onSubmit = "return checkPassword(this)">
+<table>
+<tr>
+<td>&nbsp&nbsp&nbsp&nbspName :&nbsp<input type="text" class="hi" name="name" required></td></tr>
+
+<tr><td>&nbsp&nbsp&nbsp&nbspEmail : <input type="email" class="hi" name="email" required></td></tr>
+
+<tr><td>&nbspPhoneNo :&nbsp<input type="number" min="0000000001" max="9999999999" class="hi" name="number" required></td></tr>
+
+<tr><td>Password : <input type="password" name="password1" class="hi" required></td></tr>
+
+<tr><td>Re-enter : <input type="password" name="password2" class="hi" required></td>
+</tr>
+</table>
+<br />
+<a href="C:\Users\cse\Desktop\Web Technologies Project Food Ordering System/loginfood.html"><input type="submit" class="b" value="Submit" width="60" height="40"></a>
+</form>
+
+<script>
+. 
+            function checkPassword(form) { 
+                password1 = form.password1.value; 
+                password2 = form.password2.value; 
+  
+                // If password not entered 
+                if (password1 == '') 
+                    alert ("Please enter Password"); 
+                      
+                // If confirm password not entered 
+                else if (password2 == '') 
+                    alert ("Please enter confirm password"); 
+                      
+                // If Not same return False.     
+                else if (password1 != password2) { 
+                    alert ("\nPassword did not match: Please try again...") 
+                    return false; 
+                } 
+  
+                // If same return True. 
+                else{ 
+                    alert("Password Match") 
+                    return true; 
+                } 
+
+
+
+
+}
+
+</script>
+
+</body>
+</html>

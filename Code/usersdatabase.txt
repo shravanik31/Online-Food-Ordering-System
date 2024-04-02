@@ -1,0 +1,12 @@
+Oracle Database 
+----------------------------------------------------------------------------
+
+Create table registerfood(
+name varchar(20),
+email varchar(20),
+phoneno varchar(10),
+pass varchar(10),
+repass varchar(10)
+);
+
+
